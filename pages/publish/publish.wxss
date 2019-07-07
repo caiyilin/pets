@@ -1,0 +1,30 @@
+page{
+  background: #eee;
+}
+
+.row {
+  overflow: hidden;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  color: #777;
+  background: #fff;
+}
+
+.submit-button{
+  margin: 10px 8px 0px 10px;
+  border-radius: 6px;
+  background: #ff9700;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+}
+
+.title{
+  padding-left: 10px;
+  float: left;
+  width:100px
+}
+
+.info-input{
+  height: 50px;
+}

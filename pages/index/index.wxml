@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="map-container">
+  <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" controls="{{controls}}" scale="14" show-location bindcontroltap="controltap">
+  </map>
+</view>
+<view class="btns">
+  <view class="btn btn-publish">
+    <navigator url="/pages/publish/publish">发布</navigator>
+  </view>
+  <view class="btn">搜索</view>
+</view>

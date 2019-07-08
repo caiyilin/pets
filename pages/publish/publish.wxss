@@ -41,3 +41,23 @@ page {
   width: 40rpx;
   height: 40rpx;
 }
+
+.success-icon{
+  line-height: 44rpx;
+}
+
+.success-info {
+  padding: 40rpx 40rpx;
+  text-align: center;
+  line-height: 80px;
+  background: #fff;
+}
+
+.btn-back {
+  margin: 20rpx 16rpx 0rpx 20rpx;
+  border-radius: 12rpx;
+  background: #ff9700;
+  line-height: 76rpx;
+  color: #fff;
+  text-align: center;
+}

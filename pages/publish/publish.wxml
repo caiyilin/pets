@@ -1,4 +1,4 @@
-<view>
+<view wx:if="{{!success}}">
   <view class="row">
     <label class="title">交易地址</label>
     <view class="info" bindtap="handleAddressClick">{{address}}</view>
@@ -17,7 +17,7 @@
   <view class="row">
     <label class="title">交易说明</label>
     <view class="info">
-      <input class="info-input" placeholder="请填写您的需求" bindinput="handleMessageChange"/>
+      <input class="info-input" placeholder="请填写您的需求" bindinput="handleMessageChange" />
     </view>
   </view>
   <view class="row">
@@ -29,4 +29,10 @@
   </view>
   <wux-toast id="wux-toast" />
   <button class="submit-button" bindtap="handleSubmit">发布信息</button>
+</view>
+<view wx:if="{{success}}">
+  <view class="success-info">
+    <icon class="success-icon" type="success" size="20" /> 发布成功
+  </view>
+  <button class="btn-back" bindtap="handleNavigateToBack"> 返回首页</button>
 </view>

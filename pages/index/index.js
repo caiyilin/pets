@@ -51,7 +51,7 @@ Page({
       const markers = value.map((value, index) => {
         return {
           iconPath: "/resources/" + value.type + ".png",
-          id: 0,
+          id: value.id,
           latitude: value.latitude,
           longitude: value.longitude,
           width: 50,
@@ -82,6 +82,10 @@ Page({
 
   controltap: function(e) {
     this.mapCtx.moveToLocation();
+  },
+
+  markerTap: function(e) {
+    console.log(e)
   },
 
   onShareAppMessage: function(res) {

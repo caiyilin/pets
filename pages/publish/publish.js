@@ -3,7 +3,8 @@ const util = require('../../utils/utils.js')
 Page({
 
   data: {
-    address: "点击选择，要勾选哦~"
+    address: "点击选择，要勾选哦~",
+    success: false
   },
 
   staticData: {
@@ -60,17 +61,25 @@ Page({
 
     try {
       var value = wx.getStorageSync('publishData');
+      var idCode;
       if (!value) {
         value = [];
+        idCode = 1;
       } else {
         value = JSON.parse(value);
+        idCode = value.length + 1;
       }
       const data = Object.assign({}, this.staticData, {
-        address: this.data.address
+        address: this.data.address,
+        id: idCode
       });
       value.push(data);
       var objToStr = JSON.stringify(value);
-      wx.setStorageSync('publishData', objToStr)
+      console.log(objToStr)
+      wx.setStorageSync('publishData', objToStr);
+      this.setData({
+        success: true
+      });
     } catch (e) {
       // Do something when catch error
     }
@@ -97,6 +106,12 @@ Page({
 
   handlePublishSucc: function(res) {
     console.log(res.data);
+  },
+
+  handleNavigateToBack: function() {
+    wx.navigateBack({
+      delta: 1
+    })
   },
 
   onShareAppMessage: function(res) {

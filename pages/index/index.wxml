@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="map-container">
-  <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" controls="{{controls}}" scale="15" show-location bindcontroltap="controltap" markers="{{markers}}">
+  <map id="map" class="map" longitude="{{longitude}}" latitude="{{latitude}}" controls="{{controls}}" scale="15" show-location bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markerTap">
   </map>
 </view>
 <view class="btns">

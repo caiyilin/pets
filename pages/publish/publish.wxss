@@ -1,30 +1,43 @@
-page{
+page {
   background: #eee;
 }
 
 .row {
   overflow: hidden;
-  line-height: 50px;
-  border-bottom: 1px solid #ccc;
+  line-height: 100rpx;
+  border-bottom: 2rpx solid #ccc;
   color: #777;
   background: #fff;
 }
 
-.submit-button{
-  margin: 10px 8px 0px 10px;
-  border-radius: 6px;
+.submit-button {
+  margin: 20rpx 16rpx 0rpx 20rpx;
+  border-radius: 12rpx;
   background: #ff9700;
-  line-height: 38px;
+  line-height: 76rpx;
   color: #fff;
   text-align: center;
 }
 
-.title{
-  padding-left: 10px;
+.title {
+  padding-left: 20rpx;
   float: left;
-  width:100px
+  width: 200rpx;
 }
 
-.info-input{
-  height: 50px;
+.info-input {
+  height: 100rpx;
+}
+
+.info {
+  position: relative;
+}
+
+.phone-image {
+  position: absolute;
+  z-index: 9;
+  right: 40rpx;
+  top: 28rpx;
+  width: 40rpx;
+  height: 40rpx;
 }

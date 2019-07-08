@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "发布交易信息"
+  "navigationBarTitleText": "发布交易信息",
+  "usingComponents": {
+    "wux-toast": "/components/toast/index"
+  }
 }

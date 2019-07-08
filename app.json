@@ -9,5 +9,10 @@
     "navigationBarTitleText": "萌宠交易平台",
     "navigationBarTextStyle": "white"
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "需要获取你的地理位置"
+    }
+  }
 }

@@ -24,7 +24,9 @@
     <label class="title">联系方式</label>
     <view class="info">
       <input class="info-input" placeholder="请填写您的联系方式" bindinput="handleContactChange" />
+      <image bindtap='handleClickPhone' src='../../resources/phone.png' class="phone-image"></image>
     </view>
   </view>
+  <wux-toast id="wux-toast" />
   <button class="submit-button" bindtap="handleSubmit">发布信息</button>
 </view>

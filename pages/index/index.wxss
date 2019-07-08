@@ -1,8 +1,8 @@
 .map-container{
   position: absolute;
-  top: 0px;
+  top: 0rpx;
   right: 0;
-  bottom: 40px;
+  bottom: 80rpx;
   left: 0;
   background: #fff
 }
@@ -16,7 +16,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  line-height: 40px;
+  line-height: 80rpx;
   background: #03bbd5;
   color:#fff;
 }

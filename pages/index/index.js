@@ -6,35 +6,64 @@ Page({
   data: {
     latitude: '',
     longitude: '',
+    markers: [],
     controls: [{
-      iconPath: '/resources/pin.png',
-      position: {
-        left: (app.globalData.windowWidth / 2) - 11,
-        top: ((app.globalData.windowHeight - 40) / 2) - 20,
-        width: 22,
-        height: 22
-      }
-    }, 
-    {
-      id: 1,
-      iconPath: '/resources/cicle.png',
-      position: {
-        left: 10,
-        top: app.globalData.windowHeight - 90,
-        width: 22,
-        height: 22
+        iconPath: '/resources/pin.png',
+        position: {
+          left: (app.globalData.windowWidth / 2) - 11,
+          top: ((app.globalData.windowHeight - 40) / 2) - 20,
+          width: 22,
+          height: 22
+        }
       },
-      clickable: true
-    }],
+      {
+        id: 1,
+        iconPath: '/resources/cicle.png',
+        position: {
+          left: 10,
+          top: app.globalData.windowHeight - 90,
+          width: 22,
+          height: 22
+        },
+        clickable: true
+      }
+    ],
   },
 
-  onReady: function (e) {
+  onReady: function(e) {
     // 使用 wx.createMapContext 获取 map 上下文
-    this.mapCtx = wx.createMapContext('map')
+    this.mapCtx = wx.createMapContext('map');
   },
 
   onShow: function() {
     this.getLocation();
+    this.getAllPublishMessage();
+  },
+
+  getAllPublishMessage() {
+    try {
+      var value = wx.getStorageSync('publishData');
+      if (!value) {
+        value = [];
+      } else {
+        value = JSON.parse(value);
+      }
+      const markers = value.map((value, index) => {
+        return {
+          iconPath: "/resources/" + value.type + ".png",
+          id: 0,
+          latitude: value.latitude,
+          longitude: value.longitude,
+          width: 50,
+          height: 50
+        }
+      });
+      this.setData({
+        markers: markers
+      });
+    } catch (e) {
+      // Do something when catch error
+    }
   },
 
   getLocation: function() {
@@ -51,7 +80,7 @@ Page({
     });
   },
 
-  controltap:function(e){
+  controltap: function(e) {
     this.mapCtx.moveToLocation();
   },
 

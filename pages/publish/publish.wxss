@@ -4,10 +4,11 @@ page {
 
 .row {
   overflow: hidden;
-  line-height: 100rpx;
+  line-height: 50rpx;
   border-bottom: 2rpx solid #ccc;
   color: #777;
   background: #fff;
+  padding: 25rpx 0;
 }
 
 .submit-button {
@@ -26,38 +27,35 @@ page {
 }
 
 .info-input {
-  height: 100rpx;
+  height: 50rpx;
 }
 
 .info {
   position: relative;
+  overflow: hidden;
 }
 
-.phone-image {
-  position: absolute;
-  z-index: 9;
-  right: 40rpx;
-  top: 28rpx;
-  width: 40rpx;
-  height: 40rpx;
+.success{
+  background: #fff;
+  padding-bottom: 40rpx
 }
 
 .success-icon{
-  line-height: 44rpx;
+  position: relative;
+  top: 8rpx;
+  margin-right: 10rpx;
 }
 
 .success-info {
-  padding: 40rpx 40rpx;
   text-align: center;
-  line-height: 80px;
+  line-height: 200rpx;
   background: #fff;
+  font-size: 32rpx;
 }
 
 .btn-back {
   margin: 20rpx 16rpx 0rpx 20rpx;
   border-radius: 12rpx;
-  background: #ff9700;
   line-height: 76rpx;
-  color: #fff;
   text-align: center;
 }

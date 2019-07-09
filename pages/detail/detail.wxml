@@ -1,0 +1,25 @@
+<view>
+  <view class="row">
+    <label class="title">交易地址</label>
+    <view class="info">{{address}}</view>
+  </view>
+  <view class="row">
+    <label class="title">交易类型</label>
+    <view class="info">
+      {{type==buy?"求购":"转让"}}
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">交易说明</label>
+    <view class="info">
+      {{message}}
+    </view>
+  </view>
+  <view class="row">
+    <label class="title">联系方式</label>
+    <view class="info">
+      {{contact}}
+      <image bindtap='handleClickPhone' src='../../resources/phone.png' class="phone-image"></image>
+    </view>
+  </view>
+</view>

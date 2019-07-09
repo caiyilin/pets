@@ -95,15 +95,6 @@ Page({
     // })
   },
 
-  handleClickPhone: function() {
-    if (this.staticData.contact) {
-      console.log(this.staticData.contact);
-      wx.makePhoneCall({
-        phoneNumber: this.staticData.contact,
-      })
-    }
-  },
-
   handlePublishSucc: function(res) {
     console.log(res.data);
   },

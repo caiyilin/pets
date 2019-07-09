@@ -85,7 +85,9 @@ Page({
   },
 
   markerTap: function(e) {
-    console.log(e)
+    wx.navigateTo({
+      url: '/pages/detail/detail?id=' + e.markerId,
+    })
   },
 
   onShareAppMessage: function(res) {

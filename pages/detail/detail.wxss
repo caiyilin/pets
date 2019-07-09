@@ -1,0 +1,36 @@
+page {
+  background: #eee;
+}
+
+.row {
+  overflow: hidden;
+  line-height: 50rpx;
+  border-bottom: 2rpx solid #ccc;
+  color: #777;
+  background: #fff;
+  padding: 25rpx 0;
+}
+
+.title {
+  padding-left: 20rpx;
+  float: left;
+  width: 200rpx;
+}
+
+.info-input {
+  height: 100rpx;
+}
+
+.info {
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-image {
+  position: absolute;
+  z-index: 9;
+  right: 40rpx;
+  top: 5rpx;
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -24,15 +24,14 @@
     <label class="title">联系方式</label>
     <view class="info">
       <input class="info-input" placeholder="请填写您的联系方式" bindinput="handleContactChange" />
-      <image bindtap='handleClickPhone' src='../../resources/phone.png' class="phone-image"></image>
     </view>
   </view>
   <wux-toast id="wux-toast" />
   <button class="submit-button" bindtap="handleSubmit">发布信息</button>
 </view>
-<view wx:if="{{success}}">
+<view wx:if="{{success}}" class='success'>
   <view class="success-info">
-    <icon class="success-icon" type="success" size="20" /> 发布成功
+    <icon class="success-icon" type="success" size="20" /> 发布信息成功 
   </view>
   <button class="btn-back" bindtap="handleNavigateToBack"> 返回首页</button>
 </view>

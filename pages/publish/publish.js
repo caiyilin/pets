@@ -41,6 +41,9 @@ Page({
   },
 
   handleSubmit: function() {
+    
+    console.log([6].concat(5,"23",14));
+
     if (this.data.address === "点击选择，要勾选哦~" || !this.data.address) {
       util.toast('请选择交易地址', 'error');
       // wx.showToast({

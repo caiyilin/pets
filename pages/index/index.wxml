@@ -7,5 +7,7 @@
   <view class="btn btn-publish">
     <navigator url="/pages/publish/publish">发布</navigator>
   </view>
-  <view class="btn">搜索</view>
+  <view class="btn">
+    <navigator url="/pages/search/search">搜索</navigator>
+  </view>
 </view>

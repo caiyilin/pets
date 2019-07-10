@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/publish/publish",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/search/search"
 
   ],
   "window": {

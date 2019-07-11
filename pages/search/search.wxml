@@ -10,11 +10,12 @@
       <view class='info'>
         <view class='info-left'>
           <view class='row'>
-            <text>总量：</text>
+            <text>总量：</text> 
             <text class='row-num total-num'>94</text>
             <text>已拨：</text>
             <text class='row-num called-num'>22</text>
             <text>未拨：</text>
+            <text class='row-num uncall-num'>72</text>
             <text class='row-num uncall-num'>72</text>
           </view>
           <view class='row'>

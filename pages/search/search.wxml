@@ -1,3 +1,39 @@
-<view>
-搜索页
+<view class='search-container'>
+  <wux-search-bar wux-class="search-bar" clear focus bind:change="onChange"></wux-search-bar>
+</view>
+<view class='row-list'>
+  <wux-card full="{{ true }}" title="平安客服邀约">
+    <view slot="top-right">
+      <text class='type-success'>邀约</text>
+    </view>
+    <view slot="body">
+      <view class='info'>
+        <view class='info-left'>
+          <view class='row'>
+            <text>总量：</text>
+            <text class='row-num total-num'>94</text>
+            <text>已拨：</text>
+            <text class='row-num called-num'>22</text>
+            <text>未拨：</text>
+            <text class='row-num uncall-num'>72</text>
+          </view>
+          <view class='row'>
+            所属人：
+            <text class='row-text'> 王琴</text>
+          </view>
+          <view class='row'>
+            归属项目：
+            <text class='row-text'>销售顾问</text>
+          </view>
+          <view class='row'>
+            批次创建人：
+            <text class='row-text'>陈倩</text>
+          </view>
+        </view>
+        <view class='info-right'>
+          <wux-icon type='ios-arrow-forward' class='icon-forward' />
+        </view>
+      </view>
+    </view>
+  </wux-card>
 </view>

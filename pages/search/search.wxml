@@ -16,7 +16,6 @@
             <text class='row-num called-num'>22</text>
             <text>未拨：</text>
             <text class='row-num uncall-num'>72</text>
-            <text class='row-num uncall-num'>72</text>
           </view>
           <view class='row'>
             所属人：

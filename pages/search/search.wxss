@@ -1,3 +1,5 @@
+@import "template-list.wxss";
+
 page {
   background: #f8f8f8;
 }
@@ -10,68 +12,4 @@ page {
 
 .search-bar {
   background: #03bbd5 !important;
-}
-
-.top-title {
-  font-weight: bold;
-  font-size: 24rpx;
-}
-
-.info {
-  position: relative;
-  display: flex;
-}
-
-.row-list {
-  margin: 15rpx 0rpx 15rpx 0rpx;
-}
-
-.row {
-  display: flex;
-  line-height: 60rpx;
-  font-size: 32rpx;
-  color: #979797;
-}
-
-.row-num {
-  flex: 1;
-  float: left;
-}
-
-.row-text {
-  color: #333;
-}
-
-.total-num {
-  color: #5db0ec;
-}
-
-.called-num {
-  color: #5fc36b;
-}
-
-.uncall-num {
-  color: #f00;
-}
-
-.type-success {
-  color: #5fc36b;
-}
-
-.type-danger {
-  color: #f00;
-}
-
-.info-right {
-  flex: 1;
-  text-align: center;
-  margin: auto;
-}
-
-.info-left {
-  width: 90%;
-}
-
-.icon-forward {
-  color: #dadada;
 }

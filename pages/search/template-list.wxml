@@ -1,0 +1,38 @@
+<template name="template-list">
+  <block wx:for="{{list}}" wx:key="{{item}}">
+    <wux-card full="{{ true }}" title="{{item.title}}">
+      <view slot="top-right">
+        <text class='type-success'>{{item.type}}</text>
+      </view>
+      <view slot="body">
+        <view class='info'>
+          <view class='info-left'>
+            <view class='row'>
+              <text>总量：</text>
+              <text class='row-num total-num'>{{item.totalNum}}</text>
+              <text>已拨：</text>
+              <text class='row-num called-num'>{{item.calledNum}}</text>
+              <text>未拨：</text>
+              <text class='row-num uncall-num'>{{item.uncallNum}}</text>
+            </view>
+            <view class='row'>
+              所属人：
+              <text class='row-text'> {{item.belongUser}}</text>
+            </view>
+            <view class='row'>
+              归属项目：
+              <text class='row-text'> {{item.belongProjectName}}</text>
+            </view>
+            <view class='row'>
+              批次创建人：
+              <text class='row-text'>{{item.batchCreatedUser}}</text>
+            </view>
+          </view>
+          <view class='info-right'>
+            <wux-icon type='ios-arrow-forward' class='icon-forward' />
+          </view>
+        </view>
+      </view>
+    </wux-card>
+  </block>
+</template>

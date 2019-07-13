@@ -9,10 +9,6 @@
   display: flex;
 }
 
-.row-list {
-  margin: 15rpx 0rpx 15rpx 0rpx;
-}
-
 .row {
   display: flex;
   line-height: 60rpx;

@@ -13,3 +13,7 @@ page {
 .search-bar {
   background: #03bbd5 !important;
 }
+
+.row-list {
+  margin: 15rpx 0rpx 15rpx 0rpx;
+}

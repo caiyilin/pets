@@ -3,5 +3,15 @@
   <wux-search-bar wux-class="search-bar" clear focus bind:change="onChange"></wux-search-bar>
 </view>
 <view class='row-list'>
-  <template is="template-list" data="{{list}}"/>
+  <template is="template-list" data="{{list}}" />
 </view>
+
+<!-- <wux-date-picker visible="{{ visible }}" controlled mode="datetime" value="{{ value1 }}" lang="{{ lang }}" data-index="1" data-mode="datetime" bind:confirm="onConfirm" bind:visibleChange="onVisibleChange" />
+
+<wux-date-picker mode="datetime" value="{{ value1 }}" lang="{{ lang }}" data-index="1" data-mode="datetime" bind:confirm="onConfirm">
+  <wux-cell title="Datetime" is-link extra="{{ displayValue1 }}"></wux-cell>
+</wux-date-picker>
+
+<wux-date-picker mode="date" value="{{ value2 }}" lang="{{ lang }}" data-index="2" data-mode="date" bind:confirm="onConfirm">
+  <wux-cell title="Date" is-link extra="{{ displayValue2 }}"></wux-cell>
+</wux-date-picker> -->

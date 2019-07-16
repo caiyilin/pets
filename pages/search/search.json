@@ -3,6 +3,9 @@
   "usingComponents": {
     "wux-icon": "../../components/icon/index",
     "wux-search-bar": "/components/search-bar/index",
-    "wux-card": "../../components/card/index"
+    "wux-card": "../../components/card/index",
+
+    "wux-date-picker": "../../components/date-picker/index",
+    "wux-cell": "../../components/cell/index"
   }
 }

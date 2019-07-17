@@ -58,3 +58,7 @@
 .icon-forward {
   color: #dadada;
 }
+
+.row-list {
+  margin: 25rpx 0rpx;
+}

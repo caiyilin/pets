@@ -1,6 +1,6 @@
 <template name="template-list">
   <block wx:for="{{list}}" wx:key="{{item}}">
-    <wux-card full="{{ true }}" title="{{item.title}}">
+    <wux-card full="{{ true }}" title="{{item.title}}" wux-class="row-list">
       <view slot="top-right">
         <text class='type-success'>{{item.type}}</text>
       </view>

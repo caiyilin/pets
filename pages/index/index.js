@@ -41,7 +41,7 @@ Page({
   },
 
   getAllPublishMessage() {
-    var value = app.getAllPublishMessageData();
+    var value = app.getAllPublishMessageData(-1, 0, 0);
     const markers = value.map((value, index) => {
       return {
         iconPath: "/resources/" + value.type + ".png",

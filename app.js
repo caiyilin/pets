@@ -25,25 +25,29 @@ App({
         data = [];
       } else {
         value = JSON.parse(value);
-        if (keyword) {
-          value = value.map((value, index) => {
-            return value.message.indexOf(keyword) > 0 ? {
-              id: value.id,
-              contact: value.contact,
-              type: value.type,
-              message: value.message,
-              address: value.address
-            } : null
-          });
-        }
-        if (value.length < pageSize) {
-          pageSize = value.length;
-        }
-        for (let i = 0; i < pageSize; i++) {
-          var array = value[pageNum * 5 + i];
-          if (array) {
-            data.push(array);
+        if (pageSize != -1) {
+          if (keyword) {
+            value = value.map((value, index) => {
+              return value.message.indexOf(keyword) > 0 ? {
+                id: value.id,
+                contact: value.contact,
+                type: value.type,
+                message: value.message,
+                address: value.address
+              } : null
+            });
           }
+          if (value.length < pageSize) {
+            pageSize = value.length;
+          }
+          for (let i = 0; i < pageSize; i++) {
+            var array = value[pageNum * 5 + i];
+            if (array) {
+              data.push(array);
+            }
+          }
+        } else {
+          data = value;
         }
       }
     } catch (e) {

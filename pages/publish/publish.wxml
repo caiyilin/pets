@@ -23,7 +23,7 @@
   <view class="row">
     <label class="title">联系方式</label>
     <view class="info">
-      <input class="info-input" placeholder="请填写您的联系方式" maxlength="11" bindinput="handleContactChange" />
+      <input class="info-input" type='number' placeholder="请填写您的联系方式" maxlength="11" bindinput="handleContactChange" />
     </view>
   </view>
   <wux-toast id="wux-toast" />

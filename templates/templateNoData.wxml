@@ -1,0 +1,6 @@
+<template name="templateNoData">
+  <view class="container" bindtap="handleLoadDataBtn">
+    <image class="no-data-image" src="{{noDataIcon}}"></image>
+    <view class="no-data-text">暂无数据，轻触屏幕刷新</view>
+  </view>
+</template>

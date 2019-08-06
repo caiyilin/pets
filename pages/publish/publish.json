@@ -1,6 +1,11 @@
 {
   "navigationBarTitleText": "发布交易信息",
   "usingComponents": {
-    "wux-toast": "/components/toast/index"
+    "wux-toast": "/components/toast/index",
+    "wux-cell": "/components/cell/index",
+    "wux-form": "/components/form/index",
+    "wux-field": "/components/field/index",
+    "wux-radio-group": "/components/radio-group/index",
+    "wux-radio": "/components/radio/index"
   }
 }

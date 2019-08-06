@@ -1,4 +1,5 @@
-@import "template-list.wxss";
+@import "/templates/templateList.wxss";
+@import "/templates/templateNoData.wxss";
 
 page {
   background: #f8f8f8;
@@ -8,8 +9,23 @@ page {
   background: #03bbd5;
   padding: 0;
   margin: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .search-bar {
+  position: inherit !important;
   background: #03bbd5 !important;
+}
+
+.search-bar .wux-search-bar__label {
+  position: static !important;
+}
+
+.list-content {
+  clear: both;
+  padding-top: 88rpx;
 }

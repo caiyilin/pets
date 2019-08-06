@@ -1,0 +1,15 @@
+.container {
+  text-align: center;
+  display: block;
+  color: #dbdbdb;
+  height: 100%;
+}
+
+.no-data-image {
+  width: 240rpx;
+  height: 240rpx;
+}
+
+.no-data-text {
+  margin: 10rpx;
+}

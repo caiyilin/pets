@@ -1,10 +1,13 @@
 const app = getApp()
 const util = require('../../utils/utils.js')
+
+import { $wuxForm } from '../../components/index'
 Page({
 
   data: {
     address: "点击选择，要勾选哦~",
-    success: false
+    success: false,
+    array: ['美国', '中国', '巴西', '日本'],
   },
 
   staticData: {

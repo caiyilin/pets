@@ -1,0 +1,25 @@
+<template name="templateList">
+  <block wx:for="{{list}}" wx:key="{{item}}">
+    <wux-card full="{{ true }}" title="{{item.contact}}" wux-class="row-list">
+      <view slot="top-right" class="top-right">
+        <text class="right-text {{item.type == 'buy'?'type-success':'type-danger'}}"> {{item.type=='buy'?"求购":"转让"}}</text>
+        <image class='type-success' data-index='{{index}}' bindtap='handleClickPhone' src='../../resources/phone.png' class="phone-image"></image>
+      </view>
+      <view slot="body">
+        <view class='info'>
+          <view>
+            <view class='row'>
+              <text class='content'> {{item.message}}</text>
+            </view>
+            <view class='row'>
+              <text class='row-text'> {{item.address}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </wux-card>
+  </block>
+  <view class="no-more-data" wx:if="{{noMoreData}}">
+    <view class="no-more-content">没有更多数据了</view>
+  </view>
+</template>

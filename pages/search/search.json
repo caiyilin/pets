@@ -1,11 +1,14 @@
 {
   "navigationBarTitleText": "信息搜索",
+  "enablePullDownRefresh": true,
   "usingComponents": {
     "wux-icon": "../../components/icon/index",
     "wux-search-bar": "/components/search-bar/index",
     "wux-card": "../../components/card/index",
-
     "wux-date-picker": "../../components/date-picker/index",
-    "wux-cell": "../../components/cell/index"
+    "wux-cell": "../../components/cell/index",
+    "wux-button": "/components/button/index",
+    "wux-dialog": "/components/dialog/index",
+    "wux-filterbar": "/components/filterbar/index"
   }
 }

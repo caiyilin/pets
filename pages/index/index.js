@@ -41,29 +41,20 @@ Page({
   },
 
   getAllPublishMessage() {
-    try {
-      var value = wx.getStorageSync('publishData');
-      if (!value) {
-        value = [];
-      } else {
-        value = JSON.parse(value);
+    var value = app.getAllPublishMessageData();
+    const markers = value.map((value, index) => {
+      return {
+        iconPath: "/resources/" + value.type + ".png",
+        id: value.id,
+        latitude: value.latitude,
+        longitude: value.longitude,
+        width: 50,
+        height: 50
       }
-      const markers = value.map((value, index) => {
-        return {
-          iconPath: "/resources/" + value.type + ".png",
-          id: value.id,
-          latitude: value.latitude,
-          longitude: value.longitude,
-          width: 50,
-          height: 50
-        }
-      });
-      this.setData({
-        markers: markers
-      });
-    } catch (e) {
-      // Do something when catch error
-    }
+    });
+    this.setData({
+      markers: markers
+    });
   },
 
   getLocation: function() {

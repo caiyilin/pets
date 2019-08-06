@@ -1,0 +1,72 @@
+.top-title {
+  font-weight: bold;
+  font-size: 24rpx;
+}
+
+.info {
+  position: relative;
+  display: flex;
+}
+
+.row {
+  display: flex;
+  line-height: 65rpx;
+  font-size: 33rpx;
+  color: #979797;
+}
+
+.row-text {
+  color: #333;
+}
+
+.type-success {
+  color: #5fc36b;
+}
+
+.type-danger {
+  color: #f00;
+}
+
+.icon-forward {
+  color: #dadada;
+}
+
+.row-list {
+  margin: 25rpx 0rpx;
+}
+
+.top-right {
+  position: relative;
+}
+
+.right-text {
+  margin-right: 50rpx;
+}
+
+.phone-image {
+  position: absolute;
+  z-index: 9;
+  top: 6rpx;
+  right: 0rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.content {
+  font-size: 38rpx;
+  color: #979797;
+}
+
+.wux-loader__content {
+  color: #dbdbdb !important;
+}
+
+.no-more-data {
+  position: relative;
+  margin: auto;
+  height: 60rpx;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #666;
+}
